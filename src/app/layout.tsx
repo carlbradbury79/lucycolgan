@@ -3,8 +3,8 @@ import StyledComponentsRegistry from "./registry";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lucy Colgan Studio",
-  description: "Lucy Colgan Studio - Coming Soon",
+  title: "Lucy Colgan",
+  description: "Lucy Colgan - Coming Soon",
 };
 
 export default function RootLayout({

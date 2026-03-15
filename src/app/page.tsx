@@ -1,7 +1,6 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const PageWrapper = styled.div`
   display: flex;
@@ -13,17 +12,13 @@ const PageWrapper = styled.div`
   padding: 1rem;
 `;
 
-const LogoWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 400px;
+const Heading = styled.h1`
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: #2c2c2c;
+  text-align: center;
   margin-bottom: 2rem;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 `;
 
 const ComingSoonText = styled.p`
@@ -38,17 +33,8 @@ const ComingSoonText = styled.p`
 export default function Home() {
   return (
     <PageWrapper>
-      <LogoWrapper>
-        <Image
-          src="/logo.svg"
-          alt="Lucy Colgan Studio"
-          width={400}
-          height={150}
-          priority
-        />
-      </LogoWrapper>
+      <Heading>lucycolgan.com</Heading>
       <ComingSoonText>Coming Soon</ComingSoonText>
     </PageWrapper>
   );
 }
-
